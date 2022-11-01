@@ -3,15 +3,15 @@ import Container from "./Container";
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <StyledFooter>
       <Container>
         <p>&copy; Smerin Digital Limited 2022</p>
       </Container>
-    </Wrapper>
+    </StyledFooter>
   );
 };
 
-const Wrapper = styled.footer`
+const StyledFooter = styled.footer`
   background: ${(props) => props.theme.greyDark};
   color: white;
   padding: 4rem 0;

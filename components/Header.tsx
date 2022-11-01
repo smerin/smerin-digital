@@ -3,15 +3,15 @@ import Container from "./Container";
 
 const Header = () => {
   return (
-    <Wrapper>
+    <StyledHeader>
       <Container>
         <Heading>George Smerin</Heading>
       </Container>
-    </Wrapper>
+    </StyledHeader>
   );
 };
 
-const Wrapper = styled.header`
+const StyledHeader = styled.header`
   background: ${(props) => props.theme.turquoise};
   padding: 4rem 0;
 `;
