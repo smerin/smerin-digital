@@ -1,11 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styled from "styled-components";
-import Container from "../components/Container";
-import Footer from "../components/Footer";
+import { Post } from "../interfaces/post";
+import { getAllPosts } from "../lib/api";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import HomePage from "../components/HomePage";
 
-const Home: NextPage = () => {
+interface Props {
+  posts: Post[];
+}
+
+const Home: NextPage<Props> = ({ posts }) => {
   return (
     <>
       <Head>
@@ -13,27 +18,18 @@ const Home: NextPage = () => {
         <meta name="description" content="Frontend development" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
-
-      <Container>
-        <Content>
-          <p>I love building beautiful and user friendly websites and apps</p>
-          <ul>
-            <li>Blog 1</li>
-            <li>Blog 2</li>
-            <li>Blog 3</li>
-          </ul>
-        </Content>
-      </Container>
-
+      <HomePage posts={posts} />
       <Footer />
     </>
   );
 };
 
-const Content = styled.main`
-  padding: 4rem 0;
-`;
+export const getStaticProps = async () => {
+  const posts = getAllPosts();
+  return {
+    props: { posts },
+  };
+};
 
 export default Home;

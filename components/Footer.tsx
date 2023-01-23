@@ -1,20 +1,13 @@
-import styled from "styled-components";
-import Container from "./Container";
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <StyledFooter>
-      <Container>
+    <footer className={styles.footer}>
+      <div className={styles.container}>
         <p>&copy; Smerin Digital Limited 2022</p>
-      </Container>
-    </StyledFooter>
+      </div>
+    </footer>
   );
 };
-
-const StyledFooter = styled.footer`
-  background: ${(props) => props.theme.greyDark};
-  color: white;
-  padding: 4rem 0;
-`;
 
 export default Footer;

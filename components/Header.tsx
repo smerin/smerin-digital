@@ -1,24 +1,16 @@
-import styled from "styled-components";
-import Container from "./Container";
+import styles from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <StyledHeader>
-      <Container>
-        <Heading>George Smerin</Heading>
-      </Container>
-    </StyledHeader>
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <h1 className={styles.title}>Smerin Digital</h1>
+        <h2 className={styles.subtitle}>
+          Frontend development by George Smerin
+        </h2>
+      </div>
+    </header>
   );
 };
-
-const StyledHeader = styled.header`
-  background: ${(props) => props.theme.turquoise};
-  padding: 4rem 0;
-`;
-
-const Heading = styled.h1`
-  font-size: 6rem;
-  color: white;
-`;
 
 export default Header;

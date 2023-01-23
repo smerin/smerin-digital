@@ -1,0 +1,17 @@
+@import '../styles/variables.scss';
+
+.footer {
+  background: $greyDark;
+  color: white;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 6rem;
+  color: white;
+}
