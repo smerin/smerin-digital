@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Post } from "../interfaces/post";
-import { getAllPosts } from "../lib/api";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import HomePage from "../components/HomePage";
+import { Post } from "@interfaces/post";
+import { getAllPosts } from "@lib/api";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
+import HomePage from "@components/HomePage";
 
 interface Props {
   posts: Post[];

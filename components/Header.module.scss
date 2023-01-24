@@ -1,9 +1,9 @@
 @import '../styles/variables.scss';
 
 .header {
-  background: $turquoise;
-  color: white;
   padding: 4rem 0;
+  background: $turquoise;
+  color: $white;
 }
 
 .container {
@@ -12,9 +12,13 @@
 }
 
 .title {
+  margin: 0 0 1rem;
   font-size: 6rem;
+  color: $white;
 }
 
 .subtitle {
+  margin: 0;
   font-size: 2rem;
+  color: $white;
 }

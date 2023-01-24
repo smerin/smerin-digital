@@ -4,4 +4,5 @@ export interface Post {
   title: string;
   excerpt: string;
   content: string;
+  tags: string[];
 }
