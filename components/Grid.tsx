@@ -10,8 +10,9 @@ const Grid = () => {
         pointerEvents: "none",
       }}
     >
-      {Array.from({ length: 300 }).map(() => (
+      {Array.from({ length: 300 }).map((_, index) => (
         <div
+          key={index}
           style={{
             height: "32px",
             borderBottom: "1px solid rgba(255, 0, 0, 0.2)",
