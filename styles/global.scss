@@ -75,17 +75,22 @@ h5 {
 h6 {
   @include h6;
 }
+
 p {
-  @include paragraph;
+  margin: 0 0 $vert-space;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  font-weight: 400;
 }
 
 li {
-  font-size: 1.8rem;
-  line-height: 1.8;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  font-weight: 400;
 }
 
 ul, ol {
-  margin: 1.6rem 0;
+  margin: 0 0 $vert-space;
   padding: 0 0 0 3rem;
 
   ul, ol {
@@ -96,8 +101,8 @@ ul, ol {
 
 blockquote {
   background: #eee;
-  padding: 1.6rem;
-  margin-bottom: 1.6rem;
+  padding: ($vert-space / 2) 3rem;
+  margin: 0 0 $vert-space;
   border-left: 0.8rem solid #ccc;
   border-radius: 0.8rem;
 
@@ -107,10 +112,17 @@ blockquote {
 }
 
 .remark-highlight {
-  font-size: 1.6rem;
-  margin: 1em 0;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin: $vert-space 0;
 
-  pre {
+  pre[class*="language-"] {
     border-radius: 0.8rem;
+    padding-top: $vert-space / 2;
+    padding-bottom: $vert-space / 2;
+  }
+
+  code[class*="language-"] {
+    line-height: 3.2rem;
   }
 }

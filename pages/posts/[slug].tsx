@@ -6,6 +6,7 @@ import Header from "@components/Header";
 import Footer from "@components/Footer";
 import PostPage from "@components/PostPage";
 import markdownToHtml from "@lib/markdownToHtml";
+// import Grid from "@components/Grid";
 
 interface Props {
   post: Post;
@@ -19,6 +20,7 @@ const SinglePost: NextPage<Props> = ({ post }) => {
         <meta name="description" content="Frontend development" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <Grid /> */}
       <Header />
       <PostPage post={post} />
       <Footer />

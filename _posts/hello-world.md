@@ -38,7 +38,7 @@ Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat
 
 ### Heading 3 - Code & Code Blocks
 
-Lorem ipsum dolor sit amet, `consectetur adipiscing elit`, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget.
+Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Lorem ipsum dolor sit amet.
 
 ```css
 p {
