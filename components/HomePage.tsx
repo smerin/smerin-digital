@@ -20,7 +20,9 @@ const HomePage = ({ posts }: Props) => {
                     <a href={`/posts/${slug}`}>{title}</a>
                   </h3>
                   <p>{excerpt}</p>
-                  <a href={`/posts/${slug}`}>Read more &rarr;</a>
+                  <p className={styles.more}>
+                    <a href={`/posts/${slug}`}>Read more &rarr;</a>
+                  </p>
                 </article>
               ))}
             </div>

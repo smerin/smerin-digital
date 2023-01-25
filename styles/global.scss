@@ -126,3 +126,13 @@ blockquote {
     line-height: 3.2rem;
   }
 }
+
+a {
+  color: $turquoise;
+  text-decoration: none;
+  transition: all 0.3s;
+  
+  &:hover {
+    color: $greyDark;
+  }
+}
