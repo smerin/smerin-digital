@@ -3,6 +3,7 @@ export interface Post {
   date: string;
   title: string;
   excerpt: string;
+  meta_description: string;
   content: string;
   tags: string[];
 }

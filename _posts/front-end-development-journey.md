@@ -1,7 +1,8 @@
 ---
 date: "2023-03-01"
 title: "My front-end development journey: insights and techniques"
-excerpt: "Join me on my front-end development journey for insights and tips in design, animation, and creating captivating web experiences."
+excerpt: "Welcome to my front-end development blog! My name is George Smerin, and I'm a web and app developer based in Bristol, UK with over fifteen years of professional experience. Throughout my career, I've worked with a variety of front-end technologies, including many of the most popular frameworks and libraries."
+meta_description: "Join me on my front-end development journey for insights and tips in design, animation, and creating captivating web experiences."
 tags: []
 ---
 
